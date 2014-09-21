@@ -11,6 +11,6 @@ int main(int argc, const char * argv[]) {
     //Type:    Variable:    Value:
     std::string message = "Hello World";
 
-    sayHello(std::cout);
+    sayHello(std::cout, message);
     return 0; //
 }

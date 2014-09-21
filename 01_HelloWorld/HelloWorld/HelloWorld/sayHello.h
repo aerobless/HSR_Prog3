@@ -5,6 +5,6 @@
 #define HelloWorld_sayHello_h
 
 #include <iosfwd>
-void sayHello(std::ostream &out);
+void sayHello(std::ostream &out, std::string message);
 
 #endif

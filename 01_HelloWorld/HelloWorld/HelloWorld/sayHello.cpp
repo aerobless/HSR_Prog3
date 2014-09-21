@@ -2,9 +2,9 @@
 #include <ostream>
 
 //Function:
-void sayHello(std::ostream &out) {
+void sayHello(std::ostream &out, std::string message) {
     
     //Statement:
-    out << "Hello World!!\n";
+    out << message+"\n";
 }
 
