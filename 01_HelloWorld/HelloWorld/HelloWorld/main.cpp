@@ -1,7 +1,8 @@
 #include <iostream>
+#include "sayHello.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    sayHello(std::cout);
     return 0;
 }
