@@ -1,6 +1,11 @@
 #include <ostream>
 #include <vector>
+#include <iostream>
 #include "SequencePlayground.h"
+
+void print(int x){
+    std::cout << "hello" << x;
+}
 
 void SequencePlayground::launch(std::ostream &out){
 
@@ -14,17 +19,6 @@ void SequencePlayground::launch(std::ostream &out){
     }
     out << "\n";
 
-
-    //FUNZT NOED:
-    for(auto &j:six){
-        j *= 2;
-    }
-    for(auto const i:six){
-        out << i;
-    }
-    out << "\n";
-
-    //FUNZT SCHO:
     //Iterate through vector with references
     //A reference is needed to change an element of the vector
     for(auto &j:six){
@@ -37,6 +31,14 @@ void SequencePlayground::launch(std::ostream &out){
     }
     out << "\n";
 
+    //Lambda example with for_each algorithm
+    //The & captures references to local variables
+    for_each(six.begin(), six.end(), [&](int x){
+        out << "hi" << x;
+    });
+
+    //For_each example using a function instead of a lambda
+    for_each(six.begin(), six.end(), print);
 
     out << "Sequence Playground done!\n";
 }
