@@ -13,7 +13,7 @@ void VariableSandbox::launch(std::ostream &out){
 
     out << R"(\root.hsr\skripte\)" << "\n"; //Literal that ignores escape characters etc.
 
-    out << "Variable Sandbox done!";
+    out << "Variable Sandbox done! \n";
 }
 
 int inputAge(std::istream &in) {

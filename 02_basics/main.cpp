@@ -1,6 +1,7 @@
 //main.cpp
 #include "Hello/Hello.h"
 #include "Variables/VariableSandbox.h"
+#include "Sequences/SequencePlayground.h"
 #include <iostream>
 
 int main() {
@@ -10,7 +11,11 @@ int main() {
     VariableSandbox vs{};
     vs.launch(std::cout);
 
-    std::cout << inputAge(std::cin);
+    //std::cout << inputAge(std::cin);
+
+    SequencePlayground sp{};
+
+    sp.launch(std::cout);
 
 }
 
