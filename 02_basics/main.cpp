@@ -1,10 +1,17 @@
 //main.cpp
-#include <iostream>
 #include "Hello/Hello.h"
+#include "Variables/VariableSandbox.h"
+#include <iostream>
 
 int main() {
     Hello hello{};
     hello.sayHello(std::cout);
+
+    VariableSandbox vs{};
+    vs.launch(std::cout);
+
+    std::cout << inputAge(std::cin);
+
 }
 
 
