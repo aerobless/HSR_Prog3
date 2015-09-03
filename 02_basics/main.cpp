@@ -2,6 +2,7 @@
 #include "Hello/Hello.h"
 #include "Variables/VariableSandbox.h"
 #include "Sequences/SequencePlayground.h"
+#include "Functions/FunctionSandbox.h"
 #include <iostream>
 
 int main() {
@@ -16,6 +17,10 @@ int main() {
     SequencePlayground sp{};
 
     sp.launch(std::cout);
+
+    FunctionSandbox fs{};
+    fs.launch(std::cout);
+
 
 }
 
