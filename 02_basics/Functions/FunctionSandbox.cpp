@@ -20,10 +20,13 @@ void FunctionSandbox::launch(std::ostream &out){
     overloadTest("hi hi hi!");
     overloadTest();
 
+    out << functionWithDefArg(2);
+    out << functionWithDefArg(2, 2);
+
     out << "FunctionSandbox done! \n";
 }
 
-double FunctionSandbox::square(double value){
+double FunctionSandbox::square(double value) const{
     return value*value;
 }
 
@@ -41,9 +44,17 @@ void demo::subdemo::food(){
     std::cout << "hi food";
 }
 
-void FunctionSandbox::overloadTest(std::string in){
+void FunctionSandbox::overloadTest(std::string in) const{
     std::cout << "dude "+in;
 }
-void FunctionSandbox::overloadTest(){
+void FunctionSandbox::overloadTest() const{
     std::cout << "dude";
+}
+
+int FunctionSandbox::functionWithDefArg(int i, int y) const{
+    return i+y;
+}
+
+void FunctionSandbox::printfunc(double x, double f(double)) const{
+    std::cout << "f(" << x << ") = "<<f(x)<<"\n";
 }

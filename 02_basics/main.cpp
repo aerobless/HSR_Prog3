@@ -3,6 +3,8 @@
 #include "Variables/VariableSandbox.h"
 #include "Sequences/SequencePlayground.h"
 #include "Functions/FunctionSandbox.h"
+#include "Classes/ClassSandbox.h"
+#include "Classes/Date.h"
 #include <iostream>
 
 int main() {
@@ -21,6 +23,21 @@ int main() {
     FunctionSandbox fs{};
     fs.launch(std::cout);
 
+
+    //Calling a static function of a class
+    ClassSandbox::staticTestFunction();
+
+    std::cout << ClassSandbox::constTestVariable;
+
+    ClassSandbox cs{};
+
+    //TODO: Doesn't work properly
+   // std::cout << Date::mybirthday;
+ //   std::cout << mybirthday;
+
+    Date someday{2015, 9, 15};
+
+    std::cout << "\n" << someday << "\n" ;
 
 }
 
