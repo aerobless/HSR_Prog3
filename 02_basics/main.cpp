@@ -5,6 +5,7 @@
 #include "Functions/FunctionSandbox.h"
 #include "Classes/ClassSandbox.h"
 #include "Classes/Date.h"
+#include "Containers/ContainerPlayground.h"
 #include <iostream>
 
 int main() {
@@ -38,6 +39,9 @@ int main() {
     Date someday{2015, 9, 15};
 
     std::cout << "\n" << someday << "\n" ;
+
+    ContainerPlayground cp{};
+    cp.launch();
 
 }
 
