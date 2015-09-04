@@ -7,6 +7,7 @@
 
 
 #include <stdexcept>
+#include <iostream>
 
 class Date {
 public:
@@ -38,6 +39,11 @@ public:
     //Implementing a operator function, making Date sortable
     bool operator <(Date const& rhs) const;
 
+    //Destructor
+    ~Date(){
+        std::cout << "Someone murdered me!!!";
+    }
+
 
 };
 
@@ -68,6 +74,5 @@ inline std::istream& operator>>(std::istream& in, Date& d){
     d.read(in);
     return in;
 }
-
 
 #endif //INC_02_BASICS_DATE_H
