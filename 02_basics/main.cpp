@@ -6,6 +6,7 @@
 #include "Classes/ClassSandbox.h"
 #include "Classes/Date.h"
 #include "Containers/ContainerPlayground.h"
+#include "Algorithms/AlgorithmSandbox.h"
 #include <iostream>
 
 int main() {
@@ -42,6 +43,9 @@ int main() {
 
     ContainerPlayground cp{};
     cp.launch();
+
+    AlgorithmSandbox as{};
+    as.launch();
 
 }
 
