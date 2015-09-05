@@ -8,6 +8,13 @@
 
 void launch(){
     using std::placeholders::_1; //import placeholder _1
+    auto mult = std::bind(std::multiplies<int>{},2,_1);
+    auto plus = std::bind(std::plus<int>{}, mult, 11);
+    auto mod = std::bind(std::modulus<int>{}, plus, _1);
+    auto equals = std::bind(std::equal_to<int>{}, mod, 0);
+    //Verwendung:
+    //auto i=std::find_if(v.begin(), v.end(), equals);
+
     auto odd=std::bind(std::modulus<int>{},_1,2);
     std::cout << "odd(42) = " << odd(43) <<"\n"; //0 false
     std::cout << "odd(43) = " << odd(43) <<"\n"; //1 true
@@ -24,5 +31,8 @@ void launch(){
     for(auto a:v){
         std::cout << a;
     }
+
+
+
 
 }
