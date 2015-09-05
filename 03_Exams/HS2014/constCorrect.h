@@ -1,6 +1,7 @@
 #ifndef INC_03_EXAMS_CONSTCORRECT_H
 #define INC_03_EXAMS_CONSTCORRECT_H
 
+/*
 struct const Field32 {
         Field32 const int s=0
             ) const :state{s}{}
@@ -30,5 +31,6 @@ void testWinner() {
     Field32 const winner{32};
     ASSERT(winner.won());
 }
+*/
 
 #endif //INC_03_EXAMS_CONSTCORRECT_H
