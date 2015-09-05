@@ -3,6 +3,8 @@
 #include <iostream>
 using std::cout;
 
+void inheritanceLaunch();
+
 struct baseClass {
     baseClass(){ cout << "Base Class constructed \n"; }
     ~baseClass(){cout << "Base Class killed \n"; }

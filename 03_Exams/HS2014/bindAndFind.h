@@ -1,0 +1,6 @@
+#ifndef INC_03_EXAMS_BINDANDFIND_H
+#define INC_03_EXAMS_BINDANDFIND_H
+
+void launch();
+
+#endif //INC_03_EXAMS_BINDANDFIND_H

@@ -1,0 +1,6 @@
+#ifndef INC_03_EXAMS_SETKANDSET_H
+#define INC_03_EXAMS_SETKANDSET_H
+
+void sektAndSet();
+
+#endif //INC_03_EXAMS_SETKANDSET_H
