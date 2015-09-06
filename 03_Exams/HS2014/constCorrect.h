@@ -89,6 +89,7 @@ struct Foo {
 };
 */
 
+
 /*
 struct Foo {
     const int get() const { return i; } //first useless but possible

@@ -30,4 +30,12 @@ int main() {
 //    f.get() = 5; //error, read-only variable is not assignable
 
 
+    std::unique_ptr<int> p{};
+    if(p == nullptr && !p){
+        std::cout << "TRUE"; //TRUE
+    }
+
+    std::cout << "\n";
+    char s[]{"Hello"};
+    std::cout << sizeof(s); //6, wegen Terminalsymbol
 }
