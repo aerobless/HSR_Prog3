@@ -18,7 +18,7 @@ struct secondClass: baseClass {
     ~secondClass(){cout << "Second Class killed \n"; }
 
     void greeting() {cout << "Second Greeting\n";};
-    void talk(){ cout << "Second Class Talk";};
+    //void talk(){ cout << "Second Class Talk";};
     virtual void doSomething(){cout << "Second Class doSomething";};
 };
 

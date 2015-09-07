@@ -16,13 +16,13 @@ void inheritanceLaunch(){
     secondClass sC{tcS};
 
     //empty
-    baseClass &bC{tcS};
+    secondClass &bC{tcS};
 
     cout << "\n\n";
 
-    tcS.talk();
-    sC.talk();
+   // tcS.talk();
     bC.talk();
+   // bC.talk();
 
     cout << "\n\n";
 
