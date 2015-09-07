@@ -3,6 +3,7 @@
 #include "HS2014/bindAndFind.h"
 #include "HS2014/constCorrect.h"
 #include "HS2013/sb_iterator.h"
+#include "HS2014/stammbruch_iterator.h"
 #include <iostream>
 #include <vector>
 #include <set>
@@ -76,4 +77,24 @@ int main() {
 
     std::cout << '\042';  // "
     std::cout << char{42};// *
+
+
+    std::cout << '\n';
+    for (auto it=v.cbegin(); it!=v.cend();++it){
+        std::cout << *it << ", ";
+    }
+
+    std::cout << '\n';
+
+    stammbruch_iterator start{};
+    //auto old=start++;
+    std::cout << *start << '\n';
+    ++start;
+    std::cout << *start << '\n';
+    ++start;
+    std::cout << *start << '\n';
+    ++start;
+    std::cout << *start << '\n';
+
+    std::cout << "done";
 }
