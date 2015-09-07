@@ -1,0 +1,6 @@
+#ifndef INC_03_EXAMS_SBINBOOST_H
+#define INC_03_EXAMS_SBINBOOST_H
+
+void sbVsBoost();
+
+#endif //INC_03_EXAMS_SBINBOOST_H
